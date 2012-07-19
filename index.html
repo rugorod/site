@@ -4,11 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <!-- JS -->
-    <script src="js/bootstrap.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
 
   </head>
   <body>
@@ -32,15 +27,48 @@
       </div>
     </nav>
     <div class="container">
-      <div class="hero-unit">
-	<h2>Создание сайтов под ключ!</h2>
-	<p>Быстро, качественно, недорого..</p>
-	<p>
-	  <a class="btn btn-primary btn-large">
-	    Подробнее
-	  </a>
-	</p>
+      <div id="myCarousel" class="carousel slide">
+	<!-- Carousel items -->
+	<div class="carousel-inner">
+	  <div class="active item">
+	    <div class="hero-unit">
+	      <h2>Создание сайтов под ключ!</h2>
+	      <p>Быстро, качественно, недорого..</p>
+	      <p>
+		<a class="btn btn-primary btn-large">
+		  Подробнее
+		</a>
+	      </p>
+	    </div>
+	  </div>
+	  <div class="item">
+	    <div class="hero-unit">
+	      <h2>Администрирование локальных сетей</h2>
+	      <p>Качественно, недорого..</p>
+	      <p>
+		<a class="btn btn-primary btn-large">
+		  Подробнее
+		</a>
+	      </p>
+	    </div>
+	  </div>
+	  <div class="item">
+	    <div class="hero-unit">
+	      <h2>Написание нужных программ для вашего бизнеса</h2>
+	      <p>Быстро, качественно, недорого..</p>
+	      <p>
+		<a class="btn btn-primary btn-large">
+		  Подробнее
+		</a>
+	      </p>
+	    </div>
+	  </div>
+	</div>
+	<!-- Carousel nav -->
+	<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+	<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div>
+
       <div class="row-fluid">
 	<div class="span6">
 	  <span class="label label-info">3 000 руб.</span>
@@ -78,7 +106,7 @@
       <footer><p>&copy; | Rugorod.com</p></footer>
     </div>
 
-<!-- Modals -->
+    <!-- Modals -->
     <div class="modal hide fade" id="zakaz">
       <div class="modal-header">
 	<button type="button" class="close" data-dismiss="modal">×</button>
@@ -111,5 +139,12 @@
 	</form>
       </div>
     </div>
+    <!-- JS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
+
   </body>
 </html>
