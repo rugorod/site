@@ -1,3 +1,12 @@
+body {
+    background-image:url('../img/bg.png');
+
+}
+
+.navbar-inner {
+    background-image:url('../img/bg2.jpg');
+}
+
 .cost {
     font-size: 24px;
 }
@@ -7,7 +16,7 @@
 }
 
 .margin_t {
-    margin-top: 82px;
+    margin-top: 65px;
 }
 
 .carousel-control {
@@ -18,3 +27,66 @@
 .carousel-control.right {
     right: -45px;
 }
+
+.shadow {
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.right_block {
+    padding: 20px;
+    background: whiteSmoke;
+}
+
+.center {
+    text-align:center;
+    padding-top: 15px;
+}
+
+.attent {
+    padding: 20px;
+    margin-bottom: 25px;
+    background: whiteSmoke;
+
+}
+
+.center i {
+
+    font-size: 90px;
+}
+
+footer {
+
+}
+
+/*Colors*/
+
+.orange {
+    color: #f89406;
+}
+
+.blue {
+    color: #049cdb;
+}
+
+.green {
+    color: #46a546;
+}
+
+.red {
+    color: #9d261d;
+}
+
+.yellow {
+    color: #ffc40d;
+}
+
+.pink {
+    color: #c3325f;
+}
+
+.purple {
+    color: #7a43b6;
+}
+/**/
