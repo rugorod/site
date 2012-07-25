@@ -2,9 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 	<url>
-    <loc>http://rugorod.com/</loc>
-    <image:image>
-       <image:loc>http://example.com/image.jpg</image:loc>
-    </image:image>
-  </url>
+	  <loc>http://rugorod.com/</loc>
+	  <image:image>
+	    <image:loc>http://rugorod.com/img/logo.png</image:loc>
+	  </image:image>
+	  <changefreq>always</changefreq>
+	</url>
 </urlset>
