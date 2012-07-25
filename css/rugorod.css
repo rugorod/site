@@ -8,5 +8,13 @@
 
 .margin_t {
     margin-top: 82px;
+}
 
+.carousel-control {
+    left: -45px;
+    color: #08c;
+}
+
+.carousel-control.right {
+    right: -45px;
 }
