@@ -1,10 +1,51 @@
-body {
-    background-image:url('../img/bg.png');
+@font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('../font/Chunkfive-webfont.eot');
+    src: url('../font/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Chunkfive-webfont.woff') format('woff'),
+         url('../font/Chunkfive-webfont.ttf') format('truetype'),
+         url('../font/Chunkfive-webfont.svg#ChunkFiveRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
-.navbar-inner {
+body {
+    background-image:url('../img/bg.png');
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.logotype {
+    font-size: 7em;
+    line-height: 1.2em;
+    font-family: 'ChunkFiveRegular';
+}
+
+.logotype:hover {
+    text-decoration: none;
+    color: #09c;
+}
+
+.blue {
+    color: #08c;
+}
+
+.black {
+    color: #333;
+}
+
+.logonext {
+    padding-left: 10px;
+    font-size: 1.5em;
+
+}
+
+
+
+
+.navbar-inverse .navbar-inner {
     background-image:url('../img/bg2.jpg');
+    border-radius: 0px;
 }
 
 .cost {
@@ -14,19 +55,6 @@ body {
 .sitename {
     font-size: 24px;
 }
-
-.margin_t {
-    margin-top: 65px;
-}
-
-/*.carousel-control {
-    left: -45px;
-    color: #08c;
-}
-
-.carousel-control.right {
-    right: -45px;
-}*/
 
 .shadow {
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);

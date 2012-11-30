@@ -11,14 +11,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/rugorod.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
-
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <!-- Google analytics  -->
     <script type="text/javascript">
       var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-33635059-1']);_gaq.push(['_setDomainName', 'rugorod.com']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
     </script>
   </head>
   <body>
-    <nav class="navbar navbar-fixed-top ">
+    <div class="container">
+      <a class="logotype"><span class="black">RU</span>gorod</a><span class="logonext">создание сайтов и программных комплексов</span>
+    </div>
+    <nav class="navbar navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -26,16 +29,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a href="http://rugorod.com" class="brand">RUgorod.com</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li><a href="works.html">Наши работы</a></li>
-	      <li class="divider-vertical"></li>
               <li><a href="">О нас</a></li>
 	      <li class="divider-vertical"></li>
               <li><a data-toggle="modal" href="#contacts">Контакты</a></li>
-              <li class="divider-vertical"></li>
-              <li><a href="http://stud.rugorod.com">Сервис - расписание</a></li>
 	    </ul>
           </div>
         </div>
@@ -43,37 +41,45 @@
     </nav>
     <div class="container margin_t">
       <div class="row-fluid">
-	<div class="span8">
+	<div class="span12">
 	  <div id="myCarousel" class="carousel slide">
 	    <!-- Carousel items -->
 	    <div class="carousel-inner">
 	      <div class="active item">
 		<div class="row-fluid">
-		  <div class="span8 center">
+		  <div class="span6 center">
 		    <img src="img/slider/html5_logo.png">
 		  </div>
-		  <div class="span4">
-		    <p><h2>HTML5 верстка</h2></p>
+		  <div class="span6">
+		    <p><h1>HTML5 верстка</h1></p>
 		  </div>
 		</div>
 	      </div>
 	      <div class="item">
 		<div class="row-fluid shadow">
-		  <div class="span8 center">
+		  <div class="span6 center">
 		    <img src="img/slider/uralkontakt.png">
 		  </div>
-		  <div class="span4">
-		    <p><h2><a href="http://uralkontakt.ru">Сайт uralkontakt.ru</a></h2></p>
+		  <div class="span6">
+		    <p><h1>Сайт uralkontakt.ru</h1></p>
 		  </div>
 		</div>
 	      </div>
 	      <div class="item">
 		<div class="row-fluid shadow">
-		  <div class="span8 center">
+		  <div class="span6 center">
 		    <img src="img/slider/stud.png">
 		  </div>
-		  <div class="span4">
-		    <p><h2><a href="http://stud.rugorod.com">Расписание для студентов</a></h2></p>
+		  <div class="span6">
+		    <h1>Расписание для студентов</h1>
+
+		    <!--<p>
+		      <ul>
+			<li>
+			</li>
+		      </ul>
+		    </p>-->
+
 		  </div>
 		</div>
 	      </div>
@@ -82,6 +88,8 @@
 	    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 	  </div>
 	</div>
+
+<!--
 	<div class="span4 right_block">
 	  <img src="img/logo_b.png"/>
 	  <H2>Мы считаем, что вам нужно поговорить с нами о нашем <a data-toggle="modal" href="#zakaz">следующем проекте..</a></H2>
@@ -89,30 +97,23 @@
           <h2><abbr title="Телефон"><i class="icon-skype"></i></abbr>skype:wangel18</h2>
 	</div>
       </div>
-      <div class="row-fluid">
-	<div class="span4 shadow attent">
-	  <div class="center">
-            <a href="works.html">
-	    <i class="icon-fire orange"></i>
+<div class="row-fluid">
+  <div class="span4 shadow attent">
+    <div class="center">
+      <a href="works.html">
+	<i class="icon-fire orange"></i>
 
             <p><h3>Горячие сайты</h3></p></a>
 	  </div>
 	  <hr>
-	  <a href="http://stud.rugorod.com">
-            <p><h3>stud.rugorod.com</h3>
-          </a>
-          <h4> - Расписание для студентов</h4></p>
-
-	  <a href="http://uralkontakt.ru">
-	    <p><h3>uralkontakt.ru</h3>
-          </a>
-          <h4> - Аутсорсинговый контакт-центр</h4></p>
+	    <h3>uralkontakt.ru</h3>
+          <h4> - Аутсорсинговый контакт-центр</h4>
 
 	</div>
 	<div class="span4 shadow attent">
 	  <div class="center">
 	    <i class="icon-group blue"></i>
-	    <p><h3>Отличные специалисты</h3></p>
+	    <h3>Отличные специалисты</h3>
 	  </div>
 	  <hr>
 	  <p><h4>Программисты</h4></p>
@@ -129,18 +130,15 @@
 	  <p><h4>HTML5</h4></p>
 	  <p><h4>CSS3</h4></p>
 	  <p><h4>JS frameworks</h4></p>
-	  <p><h4><i class="icon-twitter blue"></i> Twitter bootstramp</h4></p>
+	  <p><h4><i class="icon-twitter blue"></i> Twitter bootstrap</h4></p>
 	</div>
       </div>
-
+-->
       <div class="row-fluid">
 
 	<div class="span6 well shadow">
 	  <div class="row-fluid">
 	    <div class="span8 sitename">Сайт-визитка</div>
-	    <div class="span4">
-	      <span class="label label-info cost">3 000 руб. </span>
-	    </div>
 	  </div>
 
 	  <blockquote>
@@ -161,9 +159,6 @@
 	<div class="span6 well shadow">
 	  <div class="row-fluid">
 	    <div class="span8 sitename">Сайт-каталог</div>
-	    <div class="span4">
-	      <span class="label label-info cost">6 000 руб. </span>
-	    </div>
 	  </div>
 
 	  <blockquote>
@@ -289,9 +284,7 @@
     <!-- JS -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
   </body>
 </html>
