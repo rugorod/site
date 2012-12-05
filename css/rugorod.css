@@ -15,6 +15,10 @@ body {
     font-family: 'PT Sans Caption', sans-serif;
 }
 
+.btn {
+    border-radius: 0px;
+}
+
 .logotype {
     font-size: 7em;
     line-height: 1.2em;
@@ -26,13 +30,6 @@ body {
     color: #09c;
 }
 
-.blue {
-    color: #08c;
-}
-
-.black {
-    color: #333;
-}
 
 .logonext {
     padding-left: 10px;
@@ -40,8 +37,18 @@ body {
 
 }
 
+.bg-blue {
+    background: #1570A6;
+}
 
+.bg-blue-border {
+    border-bottom: 5px solid #08c;
+}
 
+.navbar {
+    margin: 0px;
+
+}
 
 .navbar-inverse .navbar-inner {
     background-image:url('../img/bg2.jpg');
@@ -90,13 +97,20 @@ footer {
 }
 
 /*Colors*/
-
-.orange {
-    color: #f89406;
+.white {
+    color: #f2f2f2;
 }
 
 .blue {
-    color: #049cdb;
+    color: #08c;
+}
+
+.black {
+    color: #333;
+}
+
+.orange {
+    color: #f89406;
 }
 
 .green {
@@ -128,3 +142,83 @@ footer {
 }
 
 /**/
+
+/*tabs*/
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+    color: #555;
+    background-color: white;
+    border: none;
+
+}
+
+.nav-tabs > li > a {
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5em;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.tab-img {
+    width:100%
+
+}
+
+/*social*/
+.social {
+    margin-top: 2.5%;
+}
+
+.asocial {
+    color: #f2f2f2;
+    font-size: 1.3em;
+    line-height: 1.8em;
+}
+
+.asocial:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.social-inner {
+    background-color: #0D698D;
+    padding: 1.5em;
+    background-color: rgba(0, 0, 0, .16);
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    -webkit-transition: background .2s ease-in;
+    -moz-transition: background .2s ease-in;
+    -ms-transition: background .2s ease-in;
+    -o-transition: background .2s ease-in;
+    transition: background .2s ease-in;
+}
+
+.social-inner:hover {
+    background-color: rgba(0, 0, 0, .2);
+    -webkit-transition: background .2s ease-in;
+    -moz-transition: background .2s ease-in;
+    -ms-transition: background .2s ease-in;
+    -o-transition: background .2s ease-in;
+    transition: background .2s ease-in;
+}
+
+.accordion-group {
+    margin-bottom: 2px;
+    border: 0px solid #E5E5E5;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.accordion-inner {
+    padding: 9px 15px;
+    border-top: 0px;
+}
+
+.accordion {
+    margin-bottom: 0px;
+}
