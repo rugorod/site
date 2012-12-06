@@ -51,7 +51,7 @@ body {
 }
 
 .navbar-inverse .navbar-inner {
-    background-image:url('../img/bg2.jpg');
+    background-image:url('../img/bg-footer.png');
     border-radius: 0px;
 }
 
@@ -90,10 +90,6 @@ body {
 .center i {
     text-shadow: 2px 2px 3px #222;
     font-size: 90px;
-}
-
-footer {
-
 }
 
 /*Colors*/
@@ -221,4 +217,28 @@ footer {
 
 .accordion {
     margin-bottom: 0px;
+}
+
+/*footer*/
+
+footer {
+    background-color: #222;
+    background-image:url('../img/bg-footer.png');
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+}
+
+.logotype-footer {
+    font-size: 2em;
+    line-height: 1.5em;
+    font-family: 'ChunkFiveRegular';
+}
+
+.logotype-footer:hover {
+    text-decoration: none;
+    color: #09c;
+}
+
+blockquote {
+    text-align: justify;
 }
