@@ -50,6 +50,11 @@ body {
 
 }
 
+
+.carousel-control {
+    top: 90%;
+}
+
 .navbar-inverse .navbar-inner {
     background-image:url('../img/bg-footer.png');
     border-radius: 0px;
@@ -162,6 +167,10 @@ body {
 .tab-img {
     width:100%
 
+}
+
+.heig {
+    height: 168px;
 }
 
 /*social*/
