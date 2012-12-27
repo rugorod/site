@@ -44,9 +44,14 @@ body {
 
 @import url(http://fonts.googleapis.com/css?family=Sacramento);
 
+.snegurka {
+    height: 200px;
+
+}
+
 .textny {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 1%;
     line-height: 90px;
     font-size: 90px;
     font-family: 'Lobster', cursive;
@@ -71,6 +76,7 @@ body {
 
 	left: 62px; /* Adjust accordingly */
 }
+
 
 #object_snowman {
 	position: absolute;
