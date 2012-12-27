@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUgorod - cоздание сайтов Челябинск</title>
+    <meta name="keywords" content="создание сайтов, создание сайта, создать сайт, создание интернет сайта, создание сайтов челябинск, создание корпоративного сайта, создание сайта визитки, создать свой сайт, как создать сайт, стоимость создания сайта, как создать свой сайт, челябинск, сайт" />
+    <meta name="description" content="Профессиональная студия веб-дизайна RUgorod.com. Создание сайтов с нуля. Разработка сайтов: корпоративный сайт, интернет-магазин, информационный портал и другие. Фирменный стиль, продвижение, реклама." />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/newyear.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- Google analytics  -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-33635059-1']);_gaq.push(['_setDomainName', 'rugorod.com']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="textny">С новым годом!</div>
+      <div id="card_wrapper">
+	<div id="object_reindeer" class="object">
+	  <img src="img/newyear/reindeer.png">
+	</div>
+	<div id="object_santa" class="object">
+	  <img src="img/newyear/santa.png">
+	</div>
+	<div id="object_snowman" class="object">
+	  <img src="img/newyear/snowman.png">
+	</div>
+	<div id="object_tree" class="object">
+	  <img src="img/newyear/tree.png">
+	</div>
+      </div>
+      <div class="center">
+	<a class="logotype"><span class="black">RU</span>gorod</a>
+      </div>
+
+      <div id='x1'></div>
+      <script Language="JavaScript">
+var timeStr, dateStr, ostStr, x;
+function clock() {
+        now= new Date();
+        ex = new Date(2013,0,1,0,0,0);
+        // время
+        hours= now.getHours();
+        minutes= now.getMinutes();
+        seconds= now.getSeconds();
+        timeStr= "" + hours;
+        timeStr+= ((minutes < 10) ? ":0" : ":") + minutes;
+        timeStr+= ((seconds < 10) ? ":0" : ":") + seconds;
+
+        // дата
+        date= now.getDate();
+        month= now.getMonth()+1;
+        year= now.getYear();
+        dateStr= "" + date;
+        dateStr+= ((month < 10) ? "/0" : "/") + month;
+        dateStr+= "/" + year;
+
+        ostStr= "";
+        x = (ex.getTime() - now.getTime())/1000;
+        ostStr = Math.floor(x/60/60) + ' ч. ';
+        ostStr = ostStr + Math.floor((x/60/60 - Math.floor(x/60/60))*60) + ' мин. ';
+        x = (((x/60/60 - Math.floor(x/60/60))*60) - Math.floor((x/60/60 - Math.floor(x/60/60))*60))*60;
+
+
+        document.getElementById('x1').innerHTML =  'До нового года осталось:&nbsp;&nbsp;' + ostStr;
+
+        Timer= setTimeout("clock()",10);
+}
+clock();
+
+			    </script>
+
+    </div>
+  </body>
+</html>

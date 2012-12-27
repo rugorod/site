@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('../font/Chunkfive-webfont.eot');
+    src: url('../font/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Chunkfive-webfont.woff') format('woff'),
+         url('../font/Chunkfive-webfont.ttf') format('truetype'),
+         url('../font/Chunkfive-webfont.svg#ChunkFiveRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+    background-color: #6b92b9;
+    background-image: url('../img/newyear/snow1.png'), url('../img/newyear/snow2.png'), url('../img/newyear/snow3.png');
+    -webkit-animation: snow 20s linear infinite;
+    -moz-animation: snow 20s linear infinite;
+    -ms-animation: snow 20s linear infinite;
+    animation: snow 20s linear infinite;
+}
+
+/*Keyframes*/
+@keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-moz-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 50% {background-color:#b4cfe0;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px; background-color:#6b92b9;}
+}
+
+@-ms-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@import url(http://fonts.googleapis.com/css?family=Sacramento);
+
+.textny {
+    text-align: center;
+    margin-top: 5%;
+    line-height: 90px;
+    font-size: 90px;
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+#card_wrapper {
+	width: 700px;
+	height: 250px;
+	position: relative;
+	margin: 20px auto;
+}
+
+#object_reindeer {
+	position: absolute;
+
+	left: 568px; /* Adjust accordingly */
+}
+
+#object_santa {
+	position: absolute;
+
+	left: 62px; /* Adjust accordingly */
+}
+
+#object_snowman {
+	position: absolute;
+
+	left: 365px; /* Adjust accordingly */
+}
+
+
+#object_tree {
+	position: absolute;
+
+	left: 213px; /* Adjust accordingly */
+}
+
+.center {
+    text-align: center;
+}
+
+.logotype {
+
+    font-size: 7em;
+    line-height: 1.2em;
+    font-family: 'ChunkFiveRegular';
+}
+
+.logotype:hover {
+    text-decoration: none;
+    color: #09c;
+}
+.black {
+    color: #333;
+}
+
+#x1 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 30px;
+}
