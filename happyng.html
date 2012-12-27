@@ -36,13 +36,13 @@
 	</div>
       </div>
       <div class="center">
-	<a class="logotype"><span class="black">RU</span>gorod</a>
+	<a href="http://rugorod.com" class="logotype"><span class="black">RU</span>gorod</a>
       </div>
 
       <div id='x1'></div>
       <script Language="JavaScript">
-var timeStr, dateStr, ostStr, x;
-function clock() {
+	var timeStr, dateStr, ostStr, x;
+	function clock() {
         now= new Date();
         ex = new Date(2013,0,1,0,0,0);
         // время
@@ -51,30 +51,30 @@ function clock() {
         seconds= now.getSeconds();
         timeStr= "" + hours;
         timeStr+= ((minutes < 10) ? ":0" : ":") + minutes;
-        timeStr+= ((seconds < 10) ? ":0" : ":") + seconds;
+			      timeStr+= ((seconds < 10) ? ":0" : ":") + seconds;
 
-        // дата
-        date= now.getDate();
-        month= now.getMonth()+1;
-        year= now.getYear();
-        dateStr= "" + date;
-        dateStr+= ((month < 10) ? "/0" : "/") + month;
-        dateStr+= "/" + year;
+						    // дата
+						    date= now.getDate();
+						    month= now.getMonth()+1;
+						    year= now.getYear();
+						    dateStr= "" + date;
+						    dateStr+= ((month < 10) ? "/0" : "/") + month;
+									dateStr+= "/" + year;
 
-        ostStr= "";
-        x = (ex.getTime() - now.getTime())/1000;
-        ostStr = Math.floor(x/60/60) + ' ч. ';
-        ostStr = ostStr + Math.floor((x/60/60 - Math.floor(x/60/60))*60) + ' мин. ';
-        x = (((x/60/60 - Math.floor(x/60/60))*60) - Math.floor((x/60/60 - Math.floor(x/60/60))*60))*60;
+									ostStr= "";
+									x = (ex.getTime() - now.getTime())/1000;
+									ostStr = Math.floor(x/60/60) + ' ч. ';
+									ostStr = ostStr + Math.floor((x/60/60 - Math.floor(x/60/60))*60) + ' мин. ';
+									x = (((x/60/60 - Math.floor(x/60/60))*60) - Math.floor((x/60/60 - Math.floor(x/60/60))*60))*60;
 
 
-        document.getElementById('x1').innerHTML =  'До нового года осталось:&nbsp;&nbsp;' + ostStr;
+									document.getElementById('x1').innerHTML =  'До нового года осталось:&nbsp;&nbsp;' + ostStr;
 
-        Timer= setTimeout("clock()",10);
-}
-clock();
+									Timer= setTimeout("clock()",10);
+									}
+									clock();
 
-			    </script>
+									</script>
 
     </div>
   </body>
