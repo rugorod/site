@@ -43,7 +43,10 @@
 	<a href="http://rugorod.com" class="logotype"><span class="black">RU</span>gorod</a>
       </div>
 
-      <div id='x1'></div>
+      <div class="new_year_label" id='x1'></div>
+      <div class="new_year_label" id='x2'></div>
+      <div class="new_year_label" id='x3'></div>
+      <div class="new_year_label" id='x4'></div>
       <br />
 
       <div class="progress progress-danger progress-striped">
@@ -65,26 +68,41 @@ default: return str3;
 }
 }
 
-function clock() {
-        var now = new Date();
-        var newYear = new Date(now.getFullYear()+1,0,1,0,0,0);
-        var diff = (newYear - now);
+function myDiff (diff) {
         var inPercent = Math.floor(100-100*diff / (60*60*24*1000*365));
         var inDays = Math.floor(diff / (60*60*24*1000))
         var inHours = Math.floor (diff / (60*60*1000) % 24);
         var inMins = Math.floor (diff / (60*1000) % 60);
         var inSecs = Math.floor (diff / 1000 % 60);
+
         var inDaysStr = inDays + " " + plural(inDays, "день", "дня", "дней");
         var inHoursStr = inHours + " " + plural(inHours, "час", "часа", "часов");
         var inMinutesStr = inMins + " " + plural(inMins, "минута", "минуты", "минут");
         var inSecondsStr = inSecs + " " + plural(inSecs, "секунда", "секунды", "секунд");
-        document.getElementById('x1').innerHTML =  'До нового года осталось:&nbsp;&nbsp;' + inDaysStr + " "  + inHoursStr + " " + inMinutesStr + " " + inSecondsStr;
 
-        document.getElementById('progress1').style.width= inPercent +'%';
+        return {"inDays": inDaysStr, "inHours" : inHoursStr, "inMinutes" : inMinutesStr, "inSeconds" : inSecondsStr};
+
+}
+
+function clock() {
+        var now = new Date();
+        var newYear = new Date(now.getFullYear()+1,0,1,0,0,0);
+        var oldNewYear;
+        if (now.getMonth() == 0 && now.getDate() < 15) {
+           oldNewYear = new Date(now.getFullYear(),0,14,0,0,0);
+        } else {
+           oldNewYear = new Date(now.getFullYear()+1,0,14,0,0,0);
+        }
+        var diff = (newYear - now);
+        var year1 = myDiff (newYear - now);
+        var year2 = myDiff (oldNewYear - now);
+        document.getElementById('x1').innerHTML =  'До нового года осталось:&nbsp;&nbsp;' + year1.inDays + " "  + year1.inHours + " " + year1.inMinutes + " " + year1.inSeconds;
+        document.getElementById('x2').innerHTML =  'До старого нового года осталось:&nbsp;&nbsp;' + year2.inDays + " "  + year2.inHours + " " + year2.inMinutes + " " + year2.inSeconds;
+
         Timer= setTimeout("clock()",1000);
 }
                                    clock();
-								   </script>
+</script>
 
     </div>
   </body>
