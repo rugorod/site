@@ -42,35 +42,38 @@
       <div id='x1'></div>
       <script Language="JavaScript">
 var timeStr, dateStr, ostStr, x;
+
+
+
+function plural(i, str1, str2, str3){
+function plural1 (a){
+if ( a % 10 == 1 && a % 100 != 11 ) return 0
+else if ( a % 10 >= 2 && a % 10 <= 4 && ( a % 100 < 10 || a % 100 >= 20)) return 1
+else return 2;
+}
+
+switch (plural1(i)) {
+case 0: return str1;
+case 1: return str2;
+default: return str3;
+}
+}
+
 function clock() {
-        now= new Date();
-        ex = new Date(2013,0,1,0,0,0);
-        // время
-        hours= now.getHours();
-        minutes= now.getMinutes();
-        seconds= now.getSeconds();
-        timeStr= "" + hours;
-        timeStr+= ((minutes < 10) ? ":0" : ":") + minutes;
-        timeStr+= ((seconds < 10) ? ":0" : ":") + seconds;
+        var now = new Date();
+        var newYear = new Date(now.getFullYear()+1,0,1,0,0,0);
+        var diff = (newYear - now);
+        var inDays = Math.floor(diff / (60*60*24*1000))
+        var inHours = Math.floor (diff / (60*60*1000) % 24);
+        var inMins = Math.floor (diff / (60*1000) % 60);
+        var inSecs = Math.floor (diff / 1000 % 60);
+        var inDaysStr = inDays + " " + plural(inDays, "день", "дня", "дней");
+        var inHoursStr = inHours + " " + plural(inHours, "час", "часа", "часов");
+        var inMinutesStr = inMins + " " + plural(inMins, "минута", "минуты", "минут");
+        var inSecondsStr = inSecs + " " + plural(inSecs, "секунда", "секунды", "секунд");
+        document.getElementById('x1').innerHTML =  'До нового года осталось:&nbsp;&nbsp;' + inDaysStr + " "  + inHoursStr + " " + inMinutesStr + " " + inSecondsStr;
 
-        // дата
-        date= now.getDate();
-        month= now.getMonth()+1;
-        year= now.getYear();
-        dateStr= "" + date;
-        dateStr+= ((month < 10) ? "/0" : "/") + month;
-        dateStr+= "/" + year;
-
-        ostStr= "";
-        x = (ex.getTime() - now.getTime())/1000;
-        ostStr = Math.floor(x/60/60) + ' ч. ';
-        ostStr = ostStr + Math.floor((x/60/60 - Math.floor(x/60/60))*60) + ' мин. ';
-        x = (((x/60/60 - Math.floor(x/60/60))*60) - Math.floor((x/60/60 - Math.floor(x/60/60))*60))*60;
-
-
-        document.getElementById('x1').innerHTML =  'До нового года осталось:&nbsp;&nbsp;' + ostStr;
-
-        Timer= setTimeout("clock()",10);
+        Timer= setTimeout("clock()",1000);
 }
 clock();
 
