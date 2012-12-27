@@ -104,8 +104,9 @@ body {
     color: #333;
 }
 
-#x1 {
+.new_year_label {
     text-align: center;
+    margin-bottom: 10pt;
     font-family: 'Lobster', cursive;
     color: white;
     font-size: 30px;
